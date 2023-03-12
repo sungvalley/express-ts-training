@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
 import { PrismaClient } from ".prisma/client"
-import { UserRepository } from "../../infrastructure/prisma/repository/user"
-import { getUserUseCase } from "../../application/getUserUseCase"
+import { UserRepository } from "../../../infrastructure/prisma/repository/user"
+import { getUserUseCase } from "../../../application/getUserUseCase"
 
 const prisma = new PrismaClient()
 const userRepository = new UserRepository(prisma)

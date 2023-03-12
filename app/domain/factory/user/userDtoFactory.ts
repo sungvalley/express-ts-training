@@ -5,6 +5,6 @@ export const userDtoFactory = (row: user): UserDto => {
   return new UserDto(
     UserId.from(row.id),
     row.email,
-    row.display_name ?? ''
+    row.displayName
   )
 }

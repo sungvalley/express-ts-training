@@ -9,7 +9,7 @@ datasource db {
 }
 
 model user {
-  id           Int     @id @default(autoincrement()) @db.UnsignedInt
-  email        String  @db.VarChar(255)
-  display_name String  @db.VarChar(255)
+  id           Int    @id @default(autoincrement()) @db.UnsignedInt
+  email        String @db.VarChar(255)
+  displayName  String @map("display_name") @db.VarChar(255)
 }
