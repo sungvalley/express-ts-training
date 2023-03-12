@@ -7,4 +7,8 @@ router
   .route('/hello')
   .get(controller.helloWorld)
 
+router
+  .route('/user/:id')
+  .get(controller.getUser)
+
 export default router
